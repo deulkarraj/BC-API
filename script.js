@@ -7,7 +7,7 @@ const msalConfig = {
         authority: 'https://login.microsoftonline.com/12ee7ca7-ad23-44b5-afa6-4f2a2cbdea54', // Replace with your tenant ID or common
         // redirectUri: 'https://deulkarraj.github.io' // Your redirect URI
         // redirectUri: 'http://127.0.0.1:5500/index.html'
-        redirectUri: 'http://localhost:5500'
+        redirectUri: 'https://businesscentral.dynamics.com/12ee7ca7-ad23-44b5-afa6-4f2a2cbdea54/Development?company=CRONUS%20USA%2C%20Inc.&node=00000000-6136-0000-1516-5400836bd2d2&page=89&dc=0&bookmark=17_pwAAAAJ7_0oAMAAwADAAMQAw'
 
         
     }
