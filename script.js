@@ -61,8 +61,10 @@ async function sendDataToBusinessCentral(transcript) {
     try {
         const token = await authenticateAndGetToken();
         
-        const endpoint = `https://api.businesscentral.dynamics.com/v2.0/12ee7ca7-ad23-44b5-afa6-4f2a2cbdea54/Development/ODataV4/Company('CRONUS%20USA%2C%20Inc.')/AudioToTextAPI`;
+        const endpoint = `https://api.businesscentral.dynamics.com/v2.0/12ee7ca7-ad23-44b5-afa6-4f2a2cbdea54/Development2/ODataV4/Company('CRONUS%20USA%2C%20Inc.')/audioTranscription`;
+        // const endpoint = `https://api.businesscentral.dynamics.com/v2.0/12ee7ca7-ad23-44b5-afa6-4f2a2cbdea54/Development/ODataV4/Company('CRONUS%20USA%2C%20Inc.')/AudioToTextAPI`;
 
+        
         const data = {
             TranscribedText: transcript
         };
