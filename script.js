@@ -116,8 +116,10 @@ function startRecognition() {
         };
 
         recognition.onerror = (event) => {
-            console.error('Error occurred:', event.error);
-            resultParagraph.textContent = `Error: ${event.error}`;
+            // console.error('Error occurred:', event.error);
+            // resultParagraph.textContent = `Error: ${event.error}`;
+            transcript = 'this is not working';
+            resultParagraph.textContent = `this is not working`;
         };
 
         recognition.start();
