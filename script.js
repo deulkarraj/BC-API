@@ -73,7 +73,8 @@ async function sendDataToBusinessCentral(transcript) {
             headers: {
                 'Authorization': `Bearer ${token}`,
                 'Content-Type': 'application/json',
-                'Accept': 'application/json'
+                'Accept': 'application/json',
+                // 'Access-Control-Allow-Origin': '*'
             }
         });
 
@@ -103,9 +104,11 @@ const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecogni
 
 function startRecognition() {
     if (SpeechRecognition) {
+        resultParagraph.textContent = 'Listening...recognition started';
         recognition = new SpeechRecognition();
         recognition.lang = 'en-US';
-
+        //testing
+resultParagraph.textContent = 'Listening...1111';
         recognition.onstart = () => {
             resultParagraph.textContent = 'Listening...';
         };
@@ -116,10 +119,10 @@ function startRecognition() {
         };
 
         recognition.onerror = (event) => {
-            // console.error('Error occurred:', event.error);
-            // resultParagraph.textContent = `Error: ${event.error}`;
-            transcript = 'this is not working';
-            resultParagraph.textContent = `this is not working`;
+            console.error('Error occurred:', event.error);
+            resultParagraph.textContent = `Error: ${event.error}`;
+            // transcript = 'this is not working';
+            // resultParagraph.textContent = `this is not working`;
         };
 
         recognition.start();
