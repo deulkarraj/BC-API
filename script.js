@@ -6,10 +6,7 @@ const msalConfig = {
         clientId: 'ba95a7b7-2c93-43c6-9ba4-7370a6b9a4b6', // Replace with your app's client ID
         authority: 'https://login.microsoftonline.com/12ee7ca7-ad23-44b5-afa6-4f2a2cbdea54', // Replace with your tenant ID or common
         // redirectUri: 'https://deulkarraj.github.io' // Your redirect URI
-        // redirectUri: 'http://127.0.0.1:5500/index.html'
-        redirectUri: 'https://deulkarraj.github.io/BC-API/'
-
-        
+        redirectUri: 'https://deulkarraj.github.io/BC-API/'     
     }
 };
 
